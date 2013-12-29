@@ -1,0 +1,76 @@
+<script src="/i/js/mootools/mootools-core-1.4.0.js"></script>
+<script src="/i/js/mootools/mootools-more-1.4.0.1.js"></script>
+<link rel="stylesheet" type="text/css" href="/i/css/common/interface.css" media="screen, projection"/>
+
+<style>
+  .adminPanelBody {
+    font-size: 12px;
+    font-family: Tahoma;
+  }
+  .serverBox {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+  }
+  .serverBox div {
+    padding-top: 65px;
+    text-align: center;
+  }
+
+  .mask {
+  }
+  .strip {
+    -webkit-mask-image: url(/i/img/indicator.png);
+  }
+</style>
+
+<script>
+  var Ngn = {};
+  Ngn.Smon = {};
+  window.addEvent('domready', function() {
+    Ngn.Smon.Indicator = new Class({
+      initialize: function(server) {
+        this.el = new Element('div', {
+          'class': 'indicator'
+        }).inject(server.el);
+      },
+      setPercentage: function(p) {
+        var n = Math.round(p / 10);
+        this.el.setStyle('background-image', n ? '/m/img/indicator/' + n + '.png' : '');
+      }
+    });
+    Ngn.Smon.Server = new Class({
+      initialize: function(eParent) {
+        this.el = new Element('div', {
+          'class': 'serverBox dragBox'
+        });
+        this.eName = new Element('div').inject(this.el);
+
+      }
+    });
+    servers = [
+      '123'
+    ];
+    var eAdminPanelBody = document.getElement('.adminPanelBody');
+    for (var i=0; i<servers.length; i++) {
+      new Ngn.Smon.Server(eAdminPanelBody);
+    }
+    new Request.JSON({
+      url: 'http://'
+    }).send();
+  });
+</script>
+
+<div class="adminPanelBody">
+  <div class="a dragBox">
+    <div class="indicator">
+      <div class="mask">
+        <div class="strip">
+        </div>
+      </div>
+    </div>
+    <div class="cont">
+      <div>Projects 13</div>
+    </div>
+  </div>
+</div>
