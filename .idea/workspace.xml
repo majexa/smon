@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5dc3281-168f-48c2-9323-4b260bbddce7" name="Default" comment="" />
-    <ignored path="servers-monitor.iws" />
+    <ignored path="smon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,24 +19,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="servers-monitor" />
+    <favorites_list name="smon" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="6" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.3770795" vertical-offset="0" max-vertical-offset="748">
-              <folding>
-                <element signature="tag#style#0" expanded="false" />
-                <element signature="e#671#992#0" expanded="false" />
-                <element signature="e#1027#1228#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -49,6 +35,7 @@
         <option value="$PROJECT_DIR$/web/index.php" />
         <option value="$PROJECT_DIR$/1.php" />
         <option value="$PROJECT_DIR$/web/index.html" />
+        <option value="$PROJECT_DIR$/about.txt" />
       </list>
     </option>
   </component>
@@ -90,18 +77,17 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servers-monitor" />
+              <option name="myItemId" value="smon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servers-monitor" />
+              <option name="myItemId" value="smon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -111,7 +97,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="servers-monitor" />
+              <option name="myItemId" value="smon" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -125,6 +111,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -132,174 +119,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../server-manager" />
     <property name="FullScreen" value="false" />
   </component>
-  <component name="PublishConfig" serverName="droplet - manager" serverId="633835e7-4621-4890-8ca7-142a2bc8ce7c">
-    <servers>
-      <server id="0549be15-ca01-4479-90c8-f39cd7f8afd0">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="061154f2-0aa4-47d6-ba45-5cbb9680ee65">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="10b4492b-a292-46e9-9299-b02f6d00c66b">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="1154512a-4810-4ea0-8fc0-3ef35c1da19b">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="1bd8e83e-f238-453a-939f-7c4a90c6c60e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="2190f252-0830-44b4-9be1-caebb73f7748">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="2882401b-bdce-4702-851a-c15d04ca3df8">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="31bc3293-ff66-4c01-bc34-46e34de41e84">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="35ec947f-eb0f-418f-899a-4a56ac4dbde6">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="398a14cd-df5e-4d07-a166-dd47ee93afd2">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="427155a6-e923-4d9a-9f77-ee97d47b7500">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="6146aec1-711b-44b1-bcc3-c7ffd7b98b1b">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="61f1e2dd-d2e9-4f0b-bd82-54c87dd90e73">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="633835e7-4621-4890-8ca7-142a2bc8ce7c">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/root/ngn-env/smon" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="6966235a-4373-4d3a-a1b7-8ae6fe2b796e">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="6f036004-ebae-4a09-ad5b-fe5393b3cfe4">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="af749d99-a4f5-4674-9e98-774a609a3164">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="cd3f2555-f784-4db4-a408-99ee90046fad">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="cd55de36-1336-4627-aaf5-3f0eb2654c83">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="d2d3d8c3-d01d-4dd0-93cb-a8263f86a3eb">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="d687411d-4767-4f0e-9628-c523b056c624">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="e0cc7263-143d-417d-90ad-3c5c2cd2c31b">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-      <server id="ec8428a1-c682-46ee-ba1d-ee740d47e55f">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </server>
-    </servers>
-  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\www\refactor\servers-monitor\web" />
+      <recent name="C:\www\refactor\smon\web" />
     </key>
   </component>
   <component name="RunManager">
@@ -354,7 +176,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.67116356" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3557402" sideWeight="0.67116356" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -371,6 +193,11 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -383,37 +210,86 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/index.html">
+    <entry file="file://$PROJECT_DIR$/about.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="e#671#992#0" expanded="false" />
-            <element signature="e#1027#1228#0" expanded="false" />
-          </folding>
+        <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="187">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="19" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="748">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="e#671#992#0" expanded="false" />
-            <element signature="e#1027#1228#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="14" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html-backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="0" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="5" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="697">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="e#671#992#0" expanded="false" />
-            <element signature="e#1027#1228#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="8" column="14" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html-backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="0" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html-backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="0" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="136" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="6" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="16" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="19" selection-start="1467" selection-end="1467" vertical-scroll-proportion="0.0" vertical-offset="748" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="697" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
@@ -426,34 +302,30 @@
         <state line="7" column="48" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ngn-env/ngn/lib/core/Cli.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="833" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="7" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="476" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ngn-env/ngn/lib/core/Cli.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="833" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/1.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="212" selection-end="212" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="289" />
+        <state line="11" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html-backup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="0" selection-end="126" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="6" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.3770795" vertical-offset="0" max-vertical-offset="748">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="e#671#992#0" expanded="false" />
-            <element signature="e#1027#1228#0" expanded="false" />
-          </folding>
+        <state line="8" column="14" selection-start="243" selection-end="243" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="53" selection-end="53" vertical-scroll-proportion="0.11950791" vertical-offset="0" max-vertical-offset="569">
+          <folding />
         </state>
       </provider>
     </entry>
