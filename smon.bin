@@ -1,0 +1,1 @@
+php ~/ngn-env/run/run.php "new CliHelpArgsSingle('$*', new Smon)" NGN_ENV_PATH/smon/lib

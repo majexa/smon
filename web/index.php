@@ -1,23 +1,9 @@
-<?
+<?php
 
-// мониториться должно всё без использования ngn
-// список серверов брать по ссылке
-
-$server = require '123';
-file_get_contents('http://server-manager.'.$server['baseName'].'/c/asd');
-
-?>
-<table>
-<tr>
-  <td>server</td>
-  <td>last update</td>
-  <td>errors</td>
-</tr>
-<? foreach ($servers as $v) { ?>
-<tr>
-  <td><?= $v['name'] ?></td>
-  <td><?= $v['dateUpdate'] ?></td>
-  <td><?= $v['errors'] ?></td>
-</tr>
-<? } ?>
-</table>
+define('TEMPLATE_DEBUG', true);
+define('IS_DEBUG', true);
+define('PROJECT_KEY', 'smon');
+define('WEBROOT_PATH', __DIR__);
+require dirname(dirname(__DIR__)).'/ngn/init/web-standalone.php';
+require dirname(__DIR__).'/init.php';
+print (new DefaultRouter(['disableSession' => true]))->dispatch()->getOutput();
