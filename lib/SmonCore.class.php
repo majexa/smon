@@ -8,28 +8,27 @@ class SmonCore {
       'pass' => 'jsdh8132u9fr'
     ];
     $r = [];
-    foreach ([22103, 22107, 22108, 22109] as $port) {
+    foreach ([22103, 22107, 22105, 22108, 22109] as $port) {
       $sample['port'] = $port;
       $r[] = $sample;
     }
     return $r;
   }
 
-  function getCiServer() {
-    return Arr::first(array_filter($this->getServers(), function ($v) {
-      return (in_array($v['port'], [22103]));
+  function getServerByPort($port) {
+    return Arr::first(array_filter($this->getServers(), function ($v) use ($port) {
+      return (in_array($v['port'], [$port]));
     }));
   }
 
   function getTestServers() {
     return array_filter($this->getServers(), function ($v) {
       return true;
-      //return (in_array($v['port'], [22107, 22109]));
     });
   }
 
   function title(array $server) {
-    return "{$server['user']}@{$server['host']}:{$server['port']}";
+    return isset($server['name']) ? $server['name'] : "{$server['user']}@{$server['host']}:{$server['port']}";
   }
 
   function cmd(array $server, $cmd) {
@@ -37,19 +36,33 @@ class SmonCore {
   }
 
   function getEpromoListDocean() {
-    die2(SMAN_PATH);
+    return [
+      [
+        'host' => 'localhost',
+        'pass' => 'qwdqwd',
+        'name' => 'epromo: sman'
+      ],
+    ];
   }
 
   function getPersonalListDocean() {
     return [
       [
-        'host' => 'localhost',
-        'pass' => 'qwdqwd'
+        'user' => 'root',
+        'host' => '82.196.14.175',
+        'pass' => 'fefg8fy23q',
+        'name' => 'personal: dnsMaster'
+      ],
+      [
+        'host' => '37.139.26.212',
+        'pass' => '23gy8f',
+        'name' => 'personal: projects1'
       ],
       [
         'user' => 'root',
-        'host' => '82.196.14.175',
-        'pass' => 'fefg8fy23q'
+        'host' => '198.211.120.127',
+        'pass' => 'slrimeiivsxu',
+        'name' => 'personal: sman'
       ]
     ];
   }
@@ -64,6 +77,5 @@ class SmonCore {
       $this->getPersonalListDocean() //
     ));
   }
-
 
 }

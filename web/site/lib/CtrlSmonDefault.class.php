@@ -4,8 +4,11 @@ class CtrlSmonDefault extends CtrlDefault {
 
   function action_default() {
     $mon = new SmonCore();
-    $this->d['testStatus'] = $mon->cmd($mon->getCiServer(), 'ci status');
-    $this->d['servers'] = FileCache::func(function() use ($mon) {
+    $this->d['ciServer'] = ['testStatus' => $mon->cmd($mon->getServerByPort(22103), 'ci status')];
+    $this->d['productionServer'] = ['testStatus' => $mon->cmd($mon->getServerByPort(22105), 'ci status')];
+    $this->d['testServers'] = [];
+    return;
+    $this->d['testServers'] = FileCache::func(function() use ($mon) {
       $r = [];
       foreach ($mon->getTestServers() as $server) {
         $r[] = [
@@ -16,7 +19,7 @@ class CtrlSmonDefault extends CtrlDefault {
         ];
       }
       return $r;
-    }, 'servers4');
+    }, 'servers');
   }
 
 }
