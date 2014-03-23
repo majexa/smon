@@ -4,23 +4,35 @@ define('SMAN_PATH', dirname(dirname(__DIR__)).'/sman');
 
 class Smon {
 
+  /**
+   * Отображает список всех серверов
+   */
   function lst() {
     print "* ".Tt()->enumDddd(O::get('SmonCore')->getServers(), '$user.`@`.$host.($port != 22 ? `:`.$port : ``).($name ? ` - `.$name : ``)', "\n* ")."\n";
   }
 
-  function status() {
-    foreach (O::get('SmonCore')->getServers() as $v) {
-      print '* '.O::get('SmonCore')->title($v).' - '.O::get('SmonCore')->cmd($v, 'ci status')."\n";
-    }
-  }
-
+  /**
+   * Копирует локальный публичный ssh ключ на все серверы
+   */
   function uploadKeys() {
     foreach (O::get('SmonCore')->getServers() as $v) {
       (new ShellSshKeyUploader(new ShellSshPasswordCmd($v)))->upload();
     }
   }
 
-  function branches() {
+  /**
+   * Показывает время последнего ci-апдейта
+   */
+  function status() {
+    foreach (O::get('SmonCore')->getServers() as $v) {
+      print '* '.O::get('SmonCore')->title($v).' - '.O::get('SmonCore')->cmd($v, 'ci status')."\n";
+    }
+  }
+
+  /**
+   * Должен (не доделан) отображать ветви всех серверов
+   */
+  protected function branches() {
     foreach (O::get('SmonCore')->getServers() as $v) {
       $cmd = new ShellSshCmd($v);
       output(O::get('SmonCore')->title($v));
