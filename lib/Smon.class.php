@@ -15,6 +15,9 @@ class Smon {
    * Копирует локальный публичный ssh ключ на все серверы
    */
   function uploadKeys() {
+    if (trim(`command -v sshpass >/dev/null && echo "y" || echo "n"`) == 'n') {
+      print `sudo apt-get -y install sshpass`;
+    }
     foreach (O::get('SmonCore')->getServers() as $v) {
       (new ShellSshKeyUploader(new ShellSshPasswordCmd($v)))->upload();
     }
