@@ -7,11 +7,11 @@
     <orderEntry type="module-library">
       <library name="PHP">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../ngn-env/ngn" />
+          <root url="file://$MODULE_DIR$/../ngn" />
           <root url="file://$MODULE_DIR$/../sman" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/../ngn-env/ngn" />
+          <root url="file://$MODULE_DIR$/../ngn" />
           <root url="file://$MODULE_DIR$/../sman" />
         </SOURCES>
       </library>
