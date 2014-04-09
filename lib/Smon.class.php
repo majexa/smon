@@ -28,6 +28,7 @@ class Smon {
    */
   function status() {
     foreach (O::get('SmonCore')->getServers() as $v) {
+      output3(O::get('SmonCore')->title($v));
       print '* '.O::get('SmonCore')->title($v).' - '.O::get('SmonCore')->cmd($v, 'ci status')."\n";
     }
   }

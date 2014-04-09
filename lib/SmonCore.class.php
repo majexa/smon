@@ -8,7 +8,7 @@ class SmonCore {
       'pass' => 'jsdh8132u9fr'
     ];
     $r = [];
-    foreach ([22103, 22107, 22105, 22108, 22109] as $port) {
+    foreach ([22107, 22109, 22101] as $port) {
       $sample['port'] = $port;
       $r[] = $sample;
     }
