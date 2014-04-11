@@ -58,12 +58,14 @@ class SmonCore {
         'pass' => '23gy8f',
         'name' => 'personal: projects1'
       ],
+      /*
       [
         'user' => 'root',
         'host' => '198.211.120.127',
         'pass' => 'slrimeiivsxu',
         'name' => 'personal: sman'
       ]
+      */
     ];
   }
 
