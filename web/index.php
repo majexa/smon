@@ -1,9 +1,13 @@
-<?php
-
-define('TEMPLATE_DEBUG', true);
-define('IS_DEBUG', true);
-define('PROJECT_KEY', 'smon');
-define('WEBROOT_PATH', __DIR__);
-require dirname(dirname(__DIR__)).'/ngn/init/web-standalone.php';
-require dirname(__DIR__).'/init.php';
-print (new DefaultRouter(['disableSession' => true]))->dispatch()->getOutput();
+<style>
+  .a {
+    display: inline-block;
+    width: 320px;
+  }
+</style>
+<p>ci status: <?= `ci status` ?></p>
+<? foreach (glob('captures/*_sm*') as $file) { ?>
+  <div class="a">
+    <?= str_replace('.png', '', basename($file)) ?><br>
+    <img src="<?= $file ?>" />
+  </div>
+<? } ?>
