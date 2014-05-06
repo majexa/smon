@@ -26,13 +26,13 @@
   <meta http-equiv="refresh" content="120">
 </head>
 <body>
-<p><b>last ci update:</b><br><?= `ci status` ?></p>
-<p><b>last captures update:</b><br><?= date('d.m.Y H:i:s', file_get_contents(SMON_PATH.'/.capture')) ?></p>
-<? foreach (glob('captures/*_sm*') as $file) { ?>
+<p><b>last ci update:</b><br><?= $d['status'] ?></p>
+<p><b>last captures update:</b><br><?= date('d.m.Y H:i:s', $d['lastCaptureTime']) ?></p>
+<? foreach ($d['captures'] as $v) { ?>
   <div class="a">
-    <!--<a href="http://<?= str_replace('_sm.png', '', basename($file)).'/cpanel' ?>" target="_blank">-->
-    <p><?= str_replace('.june.majexa.ru_sm.png', '', basename($file)) ?></p>
-    <img src="<?= $file ?>" class="shadow"/>
+    <!--<a href="<?= $v['link'] ?>" target="_blank">-->
+    <p><?= $v['title'] ?></p>
+    <img src="<?= $v['img'] ?>" class="shadow" />
     <!--</a>-->
   </div>
 <? } ?>
