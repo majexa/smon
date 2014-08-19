@@ -18,6 +18,16 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library name="PHARS">
+        <CLASSES>
+          <root url="phar://$MODULE_DIR$/../ngn/vendors/ratchet/composer.phar" />
+        </CLASSES>
+        <SOURCES>
+          <root url="phar://$MODULE_DIR$/../ngn/vendors/ratchet/composer.phar" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>
 

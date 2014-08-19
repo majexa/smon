@@ -2,6 +2,9 @@
 
 define('SMAN_PATH', dirname(dirname(__DIR__)).'/sman');
 
+/**
+ * Мониторинг серверов
+ */
 class Smon {
 
   /**
