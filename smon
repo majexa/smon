@@ -1,1 +1,1 @@
-php ../run/run.php "new CliHelpArgsSingle('$*', new Smon)" smon/lib
+php ../run/run.php "new CliAccessArgsSingle('$*', new Smon)" smon/lib
