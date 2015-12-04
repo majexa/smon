@@ -1,8 +1,39 @@
-<?php
+<?
 
-define('WEBROOT_PATH', __DIR__);
-define('PROJECT_KEY', 'smon');
-require dirname(dirname(__DIR__)).'/ngn/init/web-standalone.php';
-require dirname(__DIR__).'/init.php'; // smon init
-Lib::addFolder(NGN_ENV_PATH.'/run/lib');
-print (new DefaultRouter(['disableSession' => true]))->dispatch()->getOutput();
+$statuses = require dirname(dirname(__DIR__)).'/ci/.status.php';
+foreach ($statuses as $k => $v) {
+  $statuses[$k]['name'] = $k == 'master' ? $k : str_replace('i-', 'issue-', $k);
+}
+
+?>
+
+<table>
+  <tr>
+    <td>
+      <img src="/m/img/server.png"><br>
+      staging
+    </td>
+    <td>
+      <b>branches</b>
+      <ul>
+      <? foreach ($statuses as $v) { ?>
+        <li>
+          <a href="#" onclick="document.getElementById('<?= $v['time'] ?>').display='block';">
+            <img src="/m/img/<?= $v['success'] ? 'passed' : 'failed' ?>.png">
+            &nbsp;<?= date('d.m.Y H:i', $v['time']) ?>
+            <?= $v['name'] ?>
+            </li>
+          </a>
+      <? } ?>
+      </ul>
+    </td>
+    <td>
+      <? foreach ($statuses as $k => $v) { ?>
+        <pre id="<?= $v['name'] ?>" style="display:none">
+          <?= $v['errors'] ?>
+        </pre>
+      <? } ?>
+    </td>
+  </tr>
+</table>
+
