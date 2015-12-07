@@ -4,6 +4,9 @@ $statuses = require dirname(dirname(__DIR__)).'/ci/.status.php';
 foreach ($statuses as $k => $v) {
   $statuses[$k]['name'] = $k == 'master' ? $k : str_replace('i-', 'issue-', $k);
 }
+print '<pre>';
+print_r($statuses);
+die();
 
 ?>
 
