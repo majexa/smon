@@ -4,12 +4,17 @@ $statuses = require dirname(dirname(__DIR__)).'/ci/.status.php';
 foreach ($statuses as $k => $v) {
   $statuses[$k]['name'] = $k == 'master' ? $k : str_replace('i-', 'issue-', $k);
 }
-print '<pre>';
-print_r($statuses);
-die();
 
 ?>
-
+<style>
+  table td {
+    vertical-align: top;
+    padding-right: 30px;
+  }
+  table li {
+    list-style: none;
+  }
+</style>
 <table>
   <tr>
     <td>
@@ -21,7 +26,7 @@ die();
       <ul>
       <? foreach ($statuses as $v) { ?>
         <li>
-          <a href="#" onclick="document.getElementById('<?= $v['time'] ?>').display='block';">
+          <a href="#" onclick="document.getElementById('<?= $v['name'] ?>').display='block';">
             <img src="/m/img/<?= $v['success'] ? 'passed' : 'failed' ?>.png">
             &nbsp;<?= date('d.m.Y H:i', $v['time']) ?>
             <?= $v['name'] ?>
@@ -32,8 +37,8 @@ die();
     </td>
     <td>
       <? foreach ($statuses as $k => $v) { ?>
-        <pre id="<?= $v['name'] ?>" style="display:none">
-          <?= $v['errors'] ?>
+        <pre id="<?= $v['name'] ?>" styl e="display:none">
+<?= $v['errors'] ?>
         </pre>
       <? } ?>
     </td>
