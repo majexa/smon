@@ -1,6 +1,6 @@
 <?php
 
-class CtrlSmonDefault extends CtrlDefault {
+class CtrlSmonDefault123 extends CtrlDefault {
 
   function action_default() {
     $servers = require PROJECT_PATH.'/.servers.php';
