@@ -6,6 +6,9 @@ foreach ($statuses as $k => $v) {
 }
 
 ?>
+
+<meta http-equiv="refresh" content="10">
+
 <style>
   body {
     font-family: arial, helvetica, sans-serif;
@@ -24,11 +27,12 @@ foreach ($statuses as $k => $v) {
     padding-right: 30px;
     font-size: 11px;
   }
-  table b {
+  table h2 {
     color: #808080;
     font-weight: bold;
     text-decoration: underline;
     display: block;
+    margin: 0;
     margin-bottom: 10px;
     font-size: 14px;
   }
@@ -42,10 +46,16 @@ foreach ($statuses as $k => $v) {
   table table .name {
     width: 100%;
   }
+  pre {
+    font-size: 10px;
+  }
   .time {
     font-size: 11px;
     color: #808080;
     padding-right: 0;
+  }
+  .error {
+    color: #f00;
   }
 </style>
 
@@ -56,7 +66,10 @@ foreach ($statuses as $k => $v) {
       tester
     </td>
     <td>
-      <b>branches</b>
+      <h2>branches</h2>
+      <? if (!$statuses['master']['success']) { ?>
+        <p class="error">Fix <b>master</b> and continue your dev!</p>
+      <? } ?>
       <table style="width:180px">
         <? foreach ($statuses as $v) { ?>
           <tr>
@@ -70,7 +83,7 @@ foreach ($statuses as $k => $v) {
     <td width="100%">
       <? foreach ($statuses as $k => $v) { ?>
         <? if (!empty($v['errors'])) { ?>
-          <b>errors on <?= $v['name'] ?></b>
+          <h2>errors on <?= $v['name'] ?></h2>
           <pre id="<?= $v['name'] ?>">
 <?= $v['errors'] ?>
           </pre>
