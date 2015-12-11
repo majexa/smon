@@ -63,7 +63,7 @@ foreach ($statuses as $k => $v) {
   <tr>
     <td class="server">
       <img src="/m/img/server.png">
-      tester
+      <?= gethostname() ?>
     </td>
     <td>
       <h2>branches</h2>
