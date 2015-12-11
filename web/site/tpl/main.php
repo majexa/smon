@@ -7,7 +7,7 @@ foreach ($statuses as $k => $v) {
 
 ?>
 
-<meta http-equiv="refresh" content="10">
+<meta http-equiv="refresh" content="30">
 
 <style>
   body {
