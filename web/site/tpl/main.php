@@ -68,7 +68,7 @@ foreach ($statuses as $k => $v) {
     <td>
       <h2>branches</h2>
       <? if (!$statuses['master']) { ?>
-        <p>no updates</p>
+        <p>no updates or update in progress</p>
       <? } else { ?>
       <? if (!$statuses['master']['success']) { ?>
         <p class="error">Fix <b>master</b> and continue your dev!</p>
