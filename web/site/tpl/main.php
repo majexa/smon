@@ -69,24 +69,24 @@ foreach ($statuses as $k => $v) {
     <td>
       <h2>branches</h2>
       <? if ($updating) { ?>
-        <p>update in progress</p>
+        <p>update in progress...</p>
       <? } else { ?>
         <? if (!$statuses['master']) { ?>
           <p>no updates</p>
         <? } ?>
-      <? } ?>
-      <? if (!$statuses['master']['success']) { ?>
-        <p class="error">Fix <b>master</b> and continue your dev!</p>
-      <? } ?>
-      <table style="width:180px">
-        <? foreach ($statuses as $v) { ?>
-          <tr>
-            <td width="1"><img src="/m/img/<?= $v['success'] ? 'passed' : 'failed' ?>.png"></td>
-            <td class="name"><?= $v['name'] ?></td>
-            <td class="time"><?= Date::recentTime($v['time']) ?></td>
-          </tr>
+        <? if (!$statuses['master']['success']) { ?>
+          <p class="error">Fix <b>master</b> and continue your dev!</p>
         <? } ?>
-      </table>
+        <table style="width:180px">
+          <? foreach ($statuses as $v) { ?>
+            <tr>
+              <td width="1"><img src="/m/img/<?= $v['success'] ? 'passed' : 'failed' ?>.png"></td>
+              <td class="name"><?= $v['name'] ?></td>
+              <td class="time"><?= Date::recentTime($v['time']) ?></td>
+            </tr>
+          <? } ?>
+        </table>
+      <? } ?>
     </td>
     <td width="100%">
       <? foreach ($statuses as $k => $v) { ?>
