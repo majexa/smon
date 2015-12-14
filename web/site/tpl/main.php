@@ -68,16 +68,15 @@ foreach ($statuses as $k => $v) {
     </td>
     <td>
       <h2>branches</h2>
-      <? if (!$statuses['master']) { ?>
-        <? if ($updating) { ?>
-          <p>update in progress</p>
-        <? } else { ?>
+      <? if ($updating) { ?>
+        <p>update in progress</p>
+      <? } else { ?>
+        <? if (!$statuses['master']) { ?>
           <p>no updates</p>
         <? } ?>
-      <? } else { ?>
+      <? } ?>
       <? if (!$statuses['master']['success']) { ?>
         <p class="error">Fix <b>master</b> and continue your dev!</p>
-      <? } ?>
       <? } ?>
       <table style="width:180px">
         <? foreach ($statuses as $v) { ?>
