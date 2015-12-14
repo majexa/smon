@@ -1,6 +1,7 @@
 <?
 
 $statuses = require NGN_ENV_PATH.'/ci/.status.php';
+$updating = file_exists(NGN_ENV_PATH.'/ci/.updating');
 foreach ($statuses as $k => $v) {
   $statuses[$k]['name'] = $k == 'master' ? $k : str_replace('i-', 'issue-', $k);
 }
@@ -68,7 +69,11 @@ foreach ($statuses as $k => $v) {
     <td>
       <h2>branches</h2>
       <? if (!$statuses['master']) { ?>
-        <p>no updates or update in progress</p>
+        <? if ($updating) { ?>
+          <p>update in progress</p>
+        <? } else { ?>
+          <p>no updates</p>
+        <? } ?>
       <? } else { ?>
       <? if (!$statuses['master']['success']) { ?>
         <p class="error">Fix <b>master</b> and continue your dev!</p>
