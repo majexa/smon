@@ -69,7 +69,7 @@ foreach ($statuses as $k => $v) {
     <td>
       <h2>branches</h2>
       <? if ($updating) { ?>
-        <p>update in progress...</p>
+        <p style="white-space: nowrap">update in progress...</p>
       <? } else { ?>
         <? if (!$statuses['master']) { ?>
           <p>no updates</p>
