@@ -8,8 +8,8 @@ foreach ($statuses as $k => $v) {
 
 ?>
 
+<title><?= $statuses['master']['success'] ? 'ok' : 'failed' ?></title>
 <meta http-equiv="refresh" content="30">
-
 <style>
   body {
     font-family: arial, helvetica, sans-serif;
